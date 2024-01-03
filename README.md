@@ -16,8 +16,5 @@ Perfomance Testing in Berandalan Jenius site (EN)
 > [!NOTE]
 > Pengujian ini dapat menampilkan Reporting (ID) | This Testing can showing Reporting (EN)
 
-> [!WARNING]
-> Pengujian ini belum menerapkan 'thresholds' (ID) | This test does not yet apply a 'threshold' (EN)
-
 [K6 Documentation](https://grafana.com/docs/k6/latest/)
 

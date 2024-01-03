@@ -5,6 +5,10 @@ import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporte
 export let options = {
   vus: 5, // 5 pengguna virtual
   duration: '1m', // Durasi pengujian
+  thresholds: {
+    'http_req_duration': ['p(95)<500'], // Waktu respons persentil ke-95 harus di bawah 500 ms
+    'http_req_failed': ['rate<0.1'], // Tingkat kesalahan harus kurang dari 10%
+  },
 };
 
 export default function () {

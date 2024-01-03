@@ -8,6 +8,10 @@ export let options = {
     { duration: '30m', target: 10 }, // Tetap di 10 pengguna selama 30 menit
     { duration: '1m', target: 0 }, // Turunkan hingga 0 pengguna dalam 1 menit
   ],
+  thresholds: {
+    'http_req_duration': ['p(95)<500'], // Waktu respons persentil ke-95 harus di bawah 500 ms
+    'http_req_failed': ['rate<0.1'], // Tingkat kesalahan harus kurang dari 10%
+  },
 };
 
 export default function () {
